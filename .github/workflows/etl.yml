@@ -2,7 +2,8 @@ name: Crypto ETL
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Changed from */5 to */30 for every 30 minutes
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 concurrency:
